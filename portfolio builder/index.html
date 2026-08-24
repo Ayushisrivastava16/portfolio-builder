@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,intial-scale=1.0"/>
+        <title>Portfolio Auto Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
+        </script>
+    </head>
+    <body>
+        <section class="form-section">
+            <h1>Portfolio Auto Generator</h1>
+            <div class="form-container">
+                <input type="text" id="name" placeholder="Enter Your Name">
+                <input type="text" id="role" placeholder="Enter Your Role">
+                <textarea id="about" placeholder="About Yourself"></textarea>
+                <input type="text" id="skills" placeholder="skills(HTML,CSS,JS)">
+                <textarea id="projects" placeholder="projects"></textarea>
+                <input type="email" id="email" placeholder="Email">
+                <button onclick="generateportfolio()"> Generate portfolio
+                </button>
+                <button onclick="downloadPDF()">
+                    DownloadPDF
+                </button>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-card">
+                <h1 id="pname">Your Name</h1>
+                <h3 id="prole">Web Developer</h3>
+                <div class="section">
+                    <h2>About Me</h2>
+                    <p id="pabout"></p>
+                </div>
+                <div class="section">
+                    <h2>skills</h2>
+                    <p id="pskills"></p>
+                </div>
+                <div class="section">
+                    <h2>project</h2>
+                    <p id="pproject"></p>
+                </div>
+                <div class="section">
+                    <h2>contact</h2>
+                    <p id="pemail"></p>
+                </div>
+            </div>
+            </section>            
+        <script src="script.js"></script>
+    </body>
+</html>

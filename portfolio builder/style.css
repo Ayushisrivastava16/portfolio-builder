@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+body{
+    background:#f4f4f4;
+}
+.form-section{
+    width:100%;
+    padding:40px;
+    background:#111;
+    color:white;
+    text-align:center;
+}
+.form-section h1{
+    margin-bottom:30px;
+    font-size:40px;
+}
+.form-container{
+    max-width:700px;
+    margin:auto;
+}
+.form-container input,
+.form-container textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+}
+.form-container textarea{
+    height:120px;
+}
+.form-container button{
+    padding:12px 25px;
+    border:none;
+    background:#00bcd4;
+    color:white;
+    margin:10px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+.form-container button:hover{
+    background:#0097a7;
+}
+.portfolio{
+    padding:50px 20px;
+}
+.portfolio-card{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.portfolio-card h1{
+    font-size:42px;
+    color:#00bcd4;
+}
+.portfolio-card h3{
+    margin-bottom:20px;
+    color:#555;
+}
+.section{
+    margin-top:30px;
+}
+.section h2{
+    margin-top:10px;
+    line-height:1.8;
+}
+@media(max-width:768px){
+    .form-section h1{
+        font-size:30px;
+    }
+    .portfolio-card{
+        padding:20px;
+    }
+    .portfolio-card h1{
+        font-size:30px;
+    }
+}
